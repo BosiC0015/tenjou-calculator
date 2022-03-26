@@ -6,6 +6,8 @@ function App() {
   const [total, setTotal] = useState<number | string>('');
   const [stones, setStones] = useState<number | string>('');
   const [unitStone, setUnitStone] = useState<number | string>('');
+  const [oneDrawTicket, setOneDrawTicket] = useState<number | string>('');
+  const [tenDrawTicket, setTenDrawTicket] = useState<number | string>('');
   const [showResults, setShowResults] = useState<boolean>(false);
 
   const clear = (): void => {
@@ -54,8 +56,8 @@ function App() {
           <input
             className='input-1draw-ticket'
             placeholder='0'
-            value={stones}
-            onChange={(event) => setStones(Number(event.target.value))}
+            value={oneDrawTicket}
+            onChange={(event) => setOneDrawTicket(Number(event.target.value))}
           />
         </div>
         <div className='inputs'>
@@ -63,8 +65,8 @@ function App() {
           <input
             className='input-10draw-ticket'
             placeholder='0'
-            value={stones}
-            onChange={(event) => setStones(Number(event.target.value))}
+            value={tenDrawTicket}
+            onChange={(event) => setTenDrawTicket(Number(event.target.value))}
           />
         </div>
         <div>
